@@ -1,0 +1,137 @@
+#header-div
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('img/happynecoarc.gif');
+    padding: 20px;
+    background-size: cover;
+}
+
+.name
+{
+    font-size: larger;
+    font-weight: bold;
+}
+
+#user-div, #computer-div
+{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #0074d9;
+    border-radius: 10px;
+    width: 150px;
+}
+
+#user-div
+{
+    background-color: #8BC34A;
+}
+
+#computer-div
+{
+    background-color: #FF5722;
+}
+
+#user-points, #computer-points
+{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+button
+{
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#neco-div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#happyNecoArc, #sadNecoArc
+{
+    display: none;
+    width: 335px;
+}   
+
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+#p-winner
+{
+    font-size: 24px;
+}
+
+
+@media (max-width: 760px) 
+{
+    #user-div, #computer-div 
+    {
+        width: 100%; 
+        margin: 0; 
+        border-radius: 0; 
+    }
+    button 
+    {
+        width: 100%; 
+    }
+    #neco-div 
+    {
+        display: none;
+    }
+    
+    #happyNecoArc, #sadNecoArc
+    {
+        display: none;
+        width: 150px;
+    }   
+}
+
+@media only screen and (max-width: 400px) 
+{
+    
+    #user-div, #computer-div 
+    {
+        width: 100%; 
+        margin: 5px;
+        padding: 5px;
+        font-size: 16px; 
+    }
+
+    button 
+    {
+        padding: 5px 10px; 
+        font-size: 16px; 
+    }
+
+    #happyNecoArc, #sadNecoArc
+    {
+        display: none;
+        width: 50px;
+    }   
+
+    #neco-div 
+    {
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+    }
+}
